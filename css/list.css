@@ -1,0 +1,132 @@
+.nav {
+    overflow: hidden;  /*溢出隐藏，避免因为行高撑大盒子而影响下一个大盒子文字*/
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    width: 70px;
+    height: 32px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+.nav .sk_list {
+    float: left;
+    width: 360px;
+}
+.nav .sk_list li a {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    padding: 0 28px;
+    line-height: 45px;
+}
+.nav .sk_con {
+    float: left;
+    width: 840px;
+}
+.nav .sk_con li a {
+    float: left;
+    font-size: 14px;
+    padding: 0 23px;
+    line-height: 48px;
+}
+.nav .sk_con li:last-child a::after {
+    content: '\e913';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+/* 主体部分 */
+.sk_box .sk_hd {
+    height: 140px;
+    text-align: center;
+    background-color: pink;
+}
+.sk_box .sk_hd img {
+    width: 100%;
+    height: 100%;
+}
+.sk_box .sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+.sk_box .sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.sk_box .sk_bd ul li .pic {
+    width: 290px;
+    height: 300px;
+    text-align: center;
+    padding-top: 3px;
+
+}
+.sk_box .sk_bd ul li .parm h4 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    padding-left: 13px;
+}
+.sk_box .sk_bd ul li .jiage {
+    height: 30px;
+    width: 290px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4px;
+    padding-left: 13px;
+}
+.sk_box .sk_bd ul li .jiage em { 
+    margin-right: 6px;
+}
+.sk_box .sk_bd ul li .jiage em span {
+    font-size: 22px;
+}
+.sk_box .sk_bd ul li .jiage>span {
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.sk_box .sk_bd ul li .jindu {
+    font-size: 14px;
+    width: 290px;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 13px;
+    margin-top: 7px;
+}
+.sk_box .sk_bd ul li .jindu div {
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    margin: 0 10px;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+    /* overflow: hidden; */
+
+}
+.sk_box .sk_bd ul li .jindu div span {
+    float: left;
+    width: 117px;
+    height: 10px;
+    background-color: #ed282e;
+}
+.sk_box .sk_bd ul li .jindu em {
+    color: #e12228;
+}
+.sk_box .sk_bd ul li .shop a {
+    display: block;
+    width: 290px;
+    height: 50px;
+    margin-top: 9px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #b1191a;
+}
+#erweima {
+    width: 92px;
+    height: 92px;
+}

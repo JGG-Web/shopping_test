@@ -1,0 +1,865 @@
+.w .main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.main .focus a {
+    float: left;
+    width: 722px;
+    height: 455px;
+
+}
+.main .newsflash {
+    float: right;
+    width: 248px;
+    height: 455px;
+}
+.main .newsflash .news {
+    height: 165px;
+    margin-bottom: -1px;
+    border: 1px solid #e4e4e4; 
+}
+.newsflash .news dt {
+    height: 33px;
+    border-bottom: 1px dotted #e8e8e7;
+    padding: 0 15px;
+}
+.newsflash .news dt h5 {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+ 
+}
+.newsflash .news dt .more a {
+    float: right;
+    line-height: 12px; 
+    margin-top: 10px;
+}
+.newsflash .news dt .more a::after {
+    content: '\e919';
+    font-family: 'icomoon';
+    font-size: 12px;
+}
+.newsflash .news dd {
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 0 10px 17px;
+    white-space: nowrap;     /*强行文字一行*/
+    overflow: hidden;       /*超出部分掩盖*/         /*这三行是为了让文字超出部分掩盖住，其次后面会添加省略号*/
+    text-overflow: ellipsis;  /*超出部分用省略号替代*/
+}
+.newsflash .news dd h4 {
+    display: inline-block;
+    margin-right: 5px;
+}
+.main .newsflash .lifeservice {
+    overflow: hidden;     /*切掉超出盒子部分*/
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+.newsflash .lifeservice ul {
+    width: 252px;
+
+}
+.newsflash .lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li a {
+    display: block;
+    width: 63px;
+    height: 70px;
+    /* text-align: center;    为了统一居中，就不用这个了，用padding-left合适一些*/  
+    padding-left: 20px;
+    padding-top: 13px;
+}
+.lifeservice ul li .a_left {
+    padding-left: 17px;        /*注意权重问题*/
+}
+.newsflash .lifeservice ul li a p::after {
+    font-family: 'icomoon';
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #c81623;
+}
+.newsflash .lifeservice ul li a .list1::after {
+    content: '\e921';
+}
+.newsflash .lifeservice ul li a .list2::after {
+    content: '\e91b';
+}
+.newsflash .lifeservice ul li a .list3::after {
+    content: '\e924';
+}
+.newsflash .lifeservice ul li a .list4::after {
+    content: '\eaad';
+}
+.newsflash .lifeservice ul li a .list5::after {
+    content: '\e93b';
+}
+.newsflash .lifeservice ul li a .list6::after {
+    content: '\e91f';
+}
+.newsflash .lifeservice ul li a .list7::after {
+    content: '\e925';
+}
+.newsflash .lifeservice ul li a .list8::after {
+    content: '\e923';
+}
+.newsflash .lifeservice ul li a .list9::after {
+    content: '\e93e';
+}
+.newsflash .lifeservice ul li a .list10::after {
+    content: '\e91d';
+}
+.newsflash .lifeservice ul li a .list11::after {
+    content: '\e91c';
+}
+.newsflash .lifeservice ul li a .list12::after {
+    content: '\e91e';
+}
+
+.main .newsflash .bargain {
+    height: 81px;
+    padding-top: 5px; 
+}
+.main .newsflash .bargain a img {
+    width: 100%;
+    height: 100%;
+}
+/* 推荐模块制作 */
+.recom {
+    height: 163px;
+    margin-top: 10px;
+    background-color: pink;
+}
+.recom .recom_hd {
+    float: left;
+    width: 206px;
+    height: 163px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #5c5251;
+}
+.recom .recom_bd {
+    float: right;
+    width: 994px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+.recom .recom_bd li a {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+    text-align: center;
+    padding-top: 22px;
+}
+.recom .recom_bd li .shu:nth-child(n)::after {
+    position: absolute;     /*要加定位，不然会被覆盖住，因为这是行内元素 而大盒子又浮动了*/
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+.like {
+    height: 273px;
+    margin-top: 20px;
+}
+.like .like_top {
+    position: relative;
+    height: 40px;
+}
+.like_top h3 {
+    position: absolute;
+    left: 0;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #333;
+
+}
+.like_top a {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    height: 14px;
+    width: 65px;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+}
+.like .like_bottom {
+    height: 233px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+.like .like_bottom ul {
+    width: 1202px;
+}
+.like .like_bottom ul li a {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 233px;
+   
+}
+.like .like_bottom ul li a div {
+    height: 163px;
+    width: 200px;
+    
+    text-align: center; 
+    
+   
+}
+.like .like_bottom ul li a div img {
+    vertical-align: middle;
+}
+.like .like_bottom ul li a div i {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.like .like_bottom ul li a h4,
+em {
+    margin-left: 35px;
+}
+.like .like_bottom ul li a h4 {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    line-height: 21px;
+    
+}
+.like .like_bottom ul li a:hover h4 {
+    color: #df3033;
+}
+.like .like_bottom ul li a em {
+    font-size: 18px;
+    color: #df3033;
+    margin-bottom: 10px;
+    line-height: 100%;  /*行高*/
+}
+.like .like_bottom ul li a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 1px;
+    height: 62px;
+    background-color: #ededed;
+}
+/* interest 模块制作 */
+.interest {
+    height: 447px;  
+    margin-top: 20px;
+}
+.interest .interest_top {
+    height: 40px;
+}
+.interest .interest_top h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #333;
+}
+.interest .interest_bottom {
+    height: 407px;
+    border: 1px solid #ededed;
+}
+.interest .interest_bottom .books a {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    width: 404px;
+    height: 405px;
+    background-color: #b8bddd;
+}
+.interest_bottom .books a h4 {
+    position: absolute;
+    left: 21px;
+    top: 25px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: #3b468d;
+}
+.interest_bottom .books a img {
+    position: absolute;
+    right: 54px;
+    bottom: 31px;
+    width: 230px;
+    height: 262px;
+}
+.interest_bottom .goods {
+    float: left;
+    width: 226px;
+    height: 405px;
+    border-right: 1px solid #ededed;
+}
+.interest_bottom .goods h4 {
+    width: 192px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ededed;
+}
+.interest_bottom .goods .keyboard {
+    position: relative;
+    display: block;
+    width: 226px;
+    height: 207px;
+    border-bottom: 1px solid #ededed;
+}
+.interest_bottom .goods .keyboard h3 {
+    position: absolute;
+    top: 70px;
+    left: 8px;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.interest_bottom .goods .keyboard div {
+    position: absolute;
+    top: 100px;
+    left: 8px;
+    width: 100px;
+    height: 35px;
+
+}
+.interest_bottom div {
+    color: #333;
+}
+.interest_bottom a:hover div {
+    color: #c81623;
+}
+.interest_bottom div p {
+    color: #e60012;
+}
+.interest_bottom .goods .keyboard img {
+    position: absolute;
+    top: 26px;
+    right: 0;
+
+}
+.interest_bottom .goods .xiu {
+    position: relative;
+    display: block;
+    width: 226px;
+    height: 158px;
+}
+.interest_bottom .goods .xiu h3 {
+    position: absolute;
+    top: 50px;
+    left: 8px;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.interest_bottom .goods .xiu div {
+    position: absolute;
+    top: 80px;
+    left: 8px;
+    width: 100px;
+    height: 35px;
+}
+.interest_bottom .goods .xiu img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.interest_bottom .brand {
+    float: left;
+    width: 406px;
+    height: 405px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ededed;
+}
+.interest_bottom .brand h4 {
+    width: 365px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ededed;
+}
+.interest_bottom .brand a {
+    position: relative;
+    display: block;
+    width: 406px;
+    height: 207px;   
+    border-bottom: 1px solid #ededed;
+}
+.interest_bottom .brand a h3 {
+    position: absolute;
+    top: 72px;
+    left: 53px;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.interest_bottom .brand a div {
+    position: absolute;
+    top: 103px;
+    left: 53px;
+    width: 100px;
+    height: 35px;
+}
+.interest_bottom .brand a img {
+    position: absolute;
+    top: 33px;
+    right: 0;
+}
+.interest_bottom .brand .temai {
+    width: 406px;
+    height: 158px;
+}
+.interest_bottom .brand .temai .xiezi {
+    position: relative;
+    float: left;
+    width: 203px;
+    height: 158px;
+    border-right: 1px solid #ededed;
+}
+.interest_bottom .brand .temai .xiezi h3 {
+    position: absolute;
+    top: 50px;
+    left: 13px;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.interest_bottom .brand .temai .xiezi div {
+    position: absolute;
+    top: 80px;
+    left: 13px;
+    width: 100px;
+    height: 35px;
+}
+.interest_bottom .brand .temai .xiezi img {
+    position: absolute;
+    right: 0;
+    top: 27px;
+}
+.interest_bottom .brand .temai .zhekou {
+    position: relative;
+    float: left;
+    width: 202px;
+    height: 158px;
+}
+.interest_bottom .brand .temai .zhekou h3 {
+    position: absolute;
+    top: 50px;
+    left: 21px;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.interest_bottom .brand .temai .zhekou div {
+    position: absolute;
+    top: 80px;
+    left: 21px;
+    width: 100px;
+    height: 35px;
+}
+.interest_bottom .brand .temai .zhekou img {
+    position: absolute;
+    right: 0;
+    top: 21px;
+}
+.interest_bottom .logo_brand {
+    float: left;
+    width: 163px;
+    height: 405px;
+    overflow: hidden;
+}
+.interest_bottom .logo_brand ul {
+    width: 152px;
+    height: 371px;
+    margin: 17px 0 14px 13px ;
+    
+}
+.interest_bottom .logo_brand ul li a {
+    float: left;
+    width: 76px;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    border-right: 1px dashed #ededed;
+    border-bottom: 1px dashed #ededed;
+
+}
+.interest_bottom .logo_brand ul .last {
+    border-bottom: 0;
+}
+/* elevator电梯模块的制作 */
+.elevator {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 345px;
+    margin-left: 600px;
+    background-color: #ffaa64;
+    opacity: .9;
+}
+.elevator li {
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+}
+.elevator li:last-child {
+    background-color: #e8751a;
+}
+.current {
+    background-color: #b1191a;
+}
+.floor .box_hd {
+    margin-top: 30px;
+    height: 28px;
+    border-bottom: 2px solid #c81623;
+
+}
+.floor .box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c81623;
+
+}
+.floor .box_hd .tab_list {
+    float: right;
+}
+.floor .box_hd .tab_list li {
+    float: left;
+    line-height: 24px;  
+}
+.floor .box_hd .tab_list li a {
+    margin: 0 14px;
+}
+.floor .box_bd {
+    height: 445px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 {
+    float: left;
+    width: 209px;
+    height: 360px;
+    background-color: #f9f9f9;
+} 
+.floor .box_bd .tab_content1 .tab_content1_box1 ul {
+    width: 184px;
+    height: 99px;
+    margin-left: 13px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    text-align: center;
+    margin-right: 12px;
+    line-height: 32px;
+    border-bottom: 1px solid #ededed;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 ul li:nth-of-type(2n) {
+    margin-right: 0;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 .tab_content1_box1_bottom {
+    position: relative;
+    padding-top: 25px;
+    display: block;
+    height: 261px;
+    width: 209px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 .ziti {
+    width: 100%;
+    height: 40px;
+    text-align: center; 
+    color: #c81623;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 .ziti h3 {
+    font-size: 18px;  
+    font-weight: 400;
+}
+.floor .box_bd .tab_content1 .tab_content1_box1 .tupian {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -75px;
+    width: 170px;
+    height: 150px;
+    line-height: 150px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a {
+    position: relative;
+    float: left;
+    width: 329px;
+    height: 360px;
+    background-color: #aed6d8;
+}
+.floor .phone .box_bd .tab_content1 .tab_content1_box2 a {
+    background-color: #c6e8b6;
+}
+.floor .diannao .box_bd .tab_content1 .tab_content1_box2 a {
+    background-color: #d7aac9;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a .ziti {
+    height: 49px;
+    color: #066c7d;
+    padding-left: 30px;
+    margin-top: 36px;
+    
+}
+.floor .phone .box_bd .tab_content1 .tab_content1_box2 a .ziti {
+    color: #4c852a;
+}
+.floor .diannao .box_bd .tab_content1 .tab_content1_box2 a .ziti {
+    color: #874d75;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a .ziti h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a .ziti p {
+    font-size: 16px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a .tupian {
+    height: 278px;
+    text-align: center;
+    line-height: 274px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a ul {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -24px;
+    width: 48px;
+    height: 12px;
+    
+    
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a ul li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #3e3e3e;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a ul li:nth-child(2) {
+    margin: 0 6px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box2 a ul li:first-child {
+    background-color: #fff;
+}
+.floor .box_bd .tab_content1 .tab_content1_box3 {
+    float: left;
+    width: 219px;
+    height: 360px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box3 .tab_content1_box3_top a {
+    position: relative;
+    display: block;
+    height: 181px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ededed;
+}
+.floor .box_bd .tab_content1 .ziti_red {
+    height: 45px;
+    margin-left: 18px;
+}
+.floor .box_bd .tab_content1 .ziti_red h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.floor .box_bd .tab_content1 .ziti_red p {
+    font-size: 14px;
+    color: #e60012;
+}
+.floor .box_bd .tab_content1 .tab_content1_box3 .tab_content1_box3_top a img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.floor .box_bd .tab_content1 .tab_content1_box3 .tab_content1_box3_bottom a {
+    position: relative;
+    display: block;
+    height: 179px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ededed;
+}
+.floor .box_bd .tab_content1 .tab_content1_box3 .tab_content1_box3_bottom a img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.floor .box_bd .tab_content1 .tab_content1_box4 {
+    float: left;
+    width: 222px;
+    height: 360px;
+    text-align: center;
+    padding-top: 70px;
+    border: 1px solid #ededed;
+    border-top: none;
+
+}
+.floor .box_bd .tab_content1 .tab_content1_box4 .ziti {
+    height: 49px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box4 .ziti h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+
+}
+.floor .box_bd .tab_content1 .tab_content1_box4 .ziti p {
+    font-size: 16px;
+    
+}
+.floor .box_bd .tab_content1 .tab_content1_box4 .tupian {
+    height: 240px;
+    line-height: 240px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box5 {
+    float: left;
+    width: 221px;
+    height: 360px;
+}
+.floor .box_bd .tab_content1 .tab_content1_box5 .tab_content1_box5_top a {
+    position: relative;
+    display: block;
+    height: 181px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+
+}
+.floor .box_bd .tab_content1 .tab_content1_box5 .tab_content1_box5_top a img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.floor .box_bd .tab_content1 .tab_content1_box5 .tab_content1_box5_bottom a {
+    position: relative;
+    display: block;
+    height: 179px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+
+}
+.floor .box_bd .tab_content1 .tab_content1_box5 .tab_content1_box5_bottom a img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.floor .box_bd .tab_bottom {
+    height: 65px;
+    margin-top: 20px;
+    padding-top: 12px;
+    background-color: #f7f7f7;
+}
+.floor .box_bd .tab_bottom ul li a {
+    float: left;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px dotted #cccccc;
+}
+.floor .box_bd .tab_bottom ul li .last {
+    border-right: 0;
+}
+/* hotcrazy热门疯抢 */
+.hotcrazy {
+    height: 313px;
+    margin-top: 30px;
+    margin-bottom: 37px;
+}
+.hotcrazy .hotcrazy_hd {
+    height: 30px;
+    font-size: 18px;
+    color: #333;
+}
+.hotcrazy .hotcrazy_hd h3 {
+    font-weight: 400;
+    line-height: 20px;
+}
+.hotcrazy .hotcrazy_bd {
+    height: 283px;
+    border: 1px solid #ededed;
+}
+.hotcrazy .hotcrazy_bd_left {
+    float: left;
+    width: 239px;
+    height: 283px;
+    line-height: 281px;
+
+
+}
+.hotcrazy .hotcrazy_bd_center {
+    float: left;
+    width: 660px;
+    height: 283px;
+    /* border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed; */
+    border: 1px solid #ededed; 
+    margin: -1px 0;     /*这两句都可以消除边框重叠的问题*/
+
+}
+.hotcrazy .hotcrazy_bd_center ul {
+    width: 660px;
+    overflow: hidden;
+}
+.hotcrazy .hotcrazy_bd_center ul li a {
+    float: left;
+    width: 220px;
+    height: 141px;
+    line-height: 141px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.hotcrazy .hotcrazy_bd_center ul li:nth-child(3n) a {
+    border-right: none;
+}
+.hotcrazy .hotcrazy_bd_right {
+    float: left;
+    width: 299px;
+    height: 283px;
+    line-height: 281px;
+}
+.hotcrazy .hotcrazy_bd img {
+    text-align: center;   
+}
+
+
+
